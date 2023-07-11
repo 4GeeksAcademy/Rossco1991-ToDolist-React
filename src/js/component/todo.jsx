@@ -2,16 +2,17 @@ import React from "react";
 import { useState } from "react";
 import { Children } from "react/cjs/react.production.min";
 
-export const Todo = ({children}) => {
 
+export const Todo = ({ children }) => {
+ 
   return (
-    <div className="card" style="width: 80%">
-      <div className="card-body">
-        <h4 className="card-title">ToDo</h4>
-        <ol className="list-group">
-          <li className="list-item">{children}</li>
-        </ol>
-      </div>
+    <div className="card">
+      <h4 className="title text-center">ToDo</h4>
+      <div className="accordian">
+        <div className="accordian-item">
+          {children}
+        </div>
+        </div>
     </div>
   );
 };
