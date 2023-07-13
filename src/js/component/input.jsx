@@ -16,7 +16,12 @@ export const Input = () => {
     setTodos(todos.toSpliced(idx, 1));
   };
 
+  const countTodos = () => {
+    let x = todos.count();
+    x.toString();
+  }
   return (
+    <>
     <form className="index" onSubmit={handleSubmit}>
       <input
         className="form-control"
@@ -35,5 +40,7 @@ export const Input = () => {
         ))}
       </ul>
     </form>
-  );
+    <p>{countTodos}</p>
+  </>
+    );
 };
