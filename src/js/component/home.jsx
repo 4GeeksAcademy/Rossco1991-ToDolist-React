@@ -8,12 +8,13 @@ import { Input } from "./input";
 const Home = () => {
 
   return (
-    <div className="container-fluid">
-      <Todo>
+    <div className="d-flex justify-content-center">
+    <Todo>
         <Input/>
       </Todo>
     </div>
   );
+
 };
 
 export default Home;
